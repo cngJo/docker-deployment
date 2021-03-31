@@ -2,6 +2,8 @@
 
 https://hub.docker.com/r/jojopr/docker-deployment
 
+This test uses php, but it could just be anything
+
 ## Local Development
 
 `docker-compose up -d`  
