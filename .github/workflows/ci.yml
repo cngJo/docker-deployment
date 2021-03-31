@@ -35,3 +35,6 @@ jobs:
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
+      -
+        name: Trigger containrrr/watchtower via http
+        run: ./.github/scripts/watchtower.sh ${{ secrets.WATCHTOWER_HOST }} ${{ secrets.WATCHTOWER_PORT }} ${{ secrets.WATCHTOWER_TOKEN }}
