@@ -1,9 +1,9 @@
 name: ci
 
 on:
-  push:
-    paths:
-      - "application/**/*"
+  release:
+    types:
+      - created
 
 jobs:
   docker:
