@@ -1,0 +1,1 @@
+<h1>Hallo, Docker <?= date("Y-m-d H:i:s") ?></h1>
