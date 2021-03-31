@@ -1,1 +1,1 @@
-<h1>Another Change <?= date("Y-m-d H:i:s") ?></h1>
+<h1>Hello <?= date("Y-m-d H:i:s") ?></h1>
