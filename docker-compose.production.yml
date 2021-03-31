@@ -1,0 +1,18 @@
+# example docker-compose file to use in production
+
+version: "3.9"
+services:
+  web:
+    image: jojopr/docker-deployment:latest
+    container_name: docker-deployment
+    ports:
+      - "5000:80"
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    ports:
+      - "8080:8080"
+    environment:
+      WATCHTOWER_HTTP_API: true
+      #WATCHTOWER_HTTP_TOKEN: -- needs to get external to prevent the token form the git, maybe via a start.sh script or just the terminal
